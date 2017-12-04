@@ -8,7 +8,7 @@ const {
   const source = new RecordSource();
   const store = new Store(source);
   const network = Network.create((operation, variables) => {
-    return fetch('https://api.graph.cool/relay/v1/cjaii96fk17y10150lwu4aqp3', {
+    return fetch('https://api.graph.cool/relay/v1/cjanmyfqh009m01466z6diuaj', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
@@ -20,7 +20,7 @@ const {
         }),
     })
     .then(response => {
-        return response.json
+        return response.json()
     })
   });
   
